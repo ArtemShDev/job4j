@@ -33,4 +33,12 @@ public class SqMaxTest {
         assertThat(result, is(10));
     }
 
+    @Test
+    public void whenThirdMax2() {
+        //MultiMax check = new MultiMax();
+        //int result = SqMax.max(10, 7, 2, 5);
+        int result = SqMax.max(10, 7, 12, 5);
+        assertThat(result, is(5));
+    }
+
 }
