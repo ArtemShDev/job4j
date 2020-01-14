@@ -15,6 +15,15 @@ public class TurnTest {
     }
 
     @Test
+    public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray2() {
+        Turn turner = new Turn();
+        int[] input = new int[] {4, 1};
+        int[] result = turner.back(input);
+        int[] expect = new int[] {1, 4};
+        assertThat(result, is(expect));
+    }
+
+    @Test
     public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
         Turn turner = new Turn();
         int[] input = new int[] {5, 12, 8, 2, 6};
